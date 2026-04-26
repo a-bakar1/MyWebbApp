@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abubakar Warsame – Systemutvecklare</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar container">
+            <a href="#" class="logo">&lt;AW /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#hem">Hem</a></li>
+                <li><a href="#om">Om mig</a></li>
+                <li><a href="#kompetenser">Kompetenser</a></li>
+                <li><a href="#projekt">Projekt</a></li>
+                <li><a href="#erfarenhet">Erfarenhet</a></li>
+                <li><a href="#hobbies">Intressen</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <button class="hamburger" aria-label="Meny">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hem" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hej, jag är <span class="highlight">Abubakar Warsame</span></h1>
+                <p class="tagline">Nyexaminerad systemutvecklare – redo att skapa framtidens digitala lösningar.</p>
+                <a href="#projekt" class="btn">Se mina projekt</a>
+                <a href="#kontakt" class="btn btn-outline">Kontakta mig</a>
+            </div>
+            <div class="hero-image">
+                <!-- Byt ut src till din egen bild -->
+                <img src="images/myPic.png" alt="Abubakar Warsame" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Om mig Section -->
+    <section id="om" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">Om <span class="highlight">mig</span></h2>
+            <div class="glass-card">
+                <p>
+                    Mitt namn är Abubakar och jag är 29 år gammal. Jag är systemvetare med fokus på systemutveckling och databaser. 
+                    Jag brinner för problemlösning, programmering och att skapa värde med teknik. 
+                    I projekt arbetar jag gärna strukturerat och analytiskt, både självständigt och i team.
+                </p>
+                <p>
+                    Jag tog min filosofie kandidatexamen i informatik med inriktning systemutveckling vid Högskolan i Borås 2025. 
+                    Utbildningen gav mig en stark grund i C#, databaser, agil metodik och webbutveckling. 
+                    Just nu söker jag en junior roll där jag kan fortsätta växa och bidra med ny energi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kompetenser Section -->
+    <section id="kompetenser" class="skills section-padding">
+        <div class="container">
+            <h2 class="section-title">Tekniska <span class="highlight">kompetenser</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card">
+                    <i class="fas fa-code"></i>
+                    <h3>C#</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-database"></i>
+                    <h3>SQL / MySQL</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fab fa-git-alt"></i>
+                    <h3>Git / GitHub</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>VS Code</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Agilt arbete</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-project-diagram"></i>
+                    <h3>Systemdesign</h3>
+                </div>
+                <div class="skill-card glass-card">
+                    <i class="fas fa-vial"></i>
+                    <h3>Testning</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projekt Section -->
+    <section id="projekt" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Mina <span class="highlight">projekt</span></h2>
+            <div class="projects-grid">
+                <div class="project-card glass-card">
+                    <img src="images/webbPic.png" alt="Första projekt - webbplats">
+                    <h3>Webbplats från grunden</h3>
+                    <p>Skapade en webbplats som skolprojekt där jag ansvarade för design och interaktiv funktionalitet. Arbetade med HTML-struktur, layout i CSS samt JavaScript för dynamiska element.</p>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+                <div class="project-card glass-card">
+                    <img src="images/sys.png" alt="Försäkringssystem">
+                    <h3>Försäkringssystem (grupprojekt)</h3>
+                    <p>Utvecklade ett försäkringssystem i fyra sprintar med agil metodik. Ansvarde för frontend, affärslogik i C#, databasmodeller och CRUD-funktioner via EF Core. Deltog i sprintdemos och retrospektiv.</p>
+                    <span class="tag">C#</span>
+                    <span class="tag">.NET</span>
+                    <span class="tag">EF Core</span>
+                    <span class="tag">Agilt</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arbetserfarenhet Section -->
+<section id="erfarenhet" class="experience section-padding">
+    <div class="container">
+        <h2 class="section-title">Arbets<span class="highlight">erfarenhet</span></h2>
+        <div class="experience-cards">
+            <div class="glass-card exp-card">
+                <h3>Psykiatrisk vårdare – Region Stockholm</h3>
+                <p class="exp-date">2019 – Pågående</p>
+                <ul>
+                    <li>Arbetade inom rättspsykiatrisk vård med stöd till patienter i dagliga aktiviteter.</li>
+                    <li>Övervakade välbefinnande och rapporterade förändringar i tillstånd.</li>
+                    <li>Bidrog till en trygg och inkluderande vårdmiljö.</li>
+                </ul>
+                <p class="exp-skills"><strong>Utvecklade:</strong> Ansvarstagande, kommunikation, förmåga att hantera komplexa situationer.</p>
+            </div>
+            <div class="glass-card exp-card">
+                <h3>Lärarassistent – Loviselundsskolan</h3>
+                <p class="exp-date">2023 – 2025</p>
+                <ul>
+                    <li>Stödde elever i deras dagliga skolarbete och utveckling.</li>
+                    <li>Samarbetade med skolpersonal kring uppföljning och anpassning.</li>
+                    <li>Visade stark kommunikations- och ansvarsförmåga i pedagogisk miljö.</li>
+                </ul>
+                <p class="exp-skills"><strong>Utvecklade:</strong> Tålamod, pedagogisk insikt, flexibilitet.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Hobbies Section -->
+<section id="hobbies" class="hobbies section-padding">
+    <div class="container">
+        <h2 class="section-title">Mina <span class="highlight">intressen</span></h2>
+        <div class="hobbies-grid">
+            <div class="glass-card hobby-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Programmering</h3>
+                <p>Bygger gärna egna projekt och lär mig nya språk och ramverk på fritiden.</p>
+            </div>
+            <div class="glass-card hobby-card">
+                <i class="fas fa-chess"></i>
+                <h3>Schack</h3>
+                <p>Spelar schack regelbundet – det skärper det logiska tänkandet och planeringsförmågan.</p>
+            </div>
+            <div class="glass-card hobby-card">
+                <i class="fas fa-book"></i>
+                <h3>Läsning</h3>
+                <p>Läser tech-bloggar, nyheter inom IT och böcker om personlig utveckling.</p>
+            </div>
+            <div class="glass-card hobby-card">
+                <i class="fas fa-futbol"></i>
+                <h3>Fotboll</h3>
+                <p>Följer fotboll och spelar med vänner – en bra balans till stillasittande kodtimmar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title">Ta <span class="highlight">kontakt</span></h2>
+            <div class="glass-card contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Namn</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-post</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Meddelande</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Skicka</button>
+                </form>
+                <div id="formFeedback" class="form-feedback"></div>
+            </div>
+            <!-- Direkt kontaktinfo -->
+            <div class="contact-info glass-card" style="margin-top: 30px; text-align: center;">
+                <p><i class="fas fa-envelope"></i> Abubakarwarsame153@gmail.com</p>
+                <p><i class="fas fa-phone"></i> 076-328 39 18</p>
+                <p><i class="fas fa-map-marker-alt"></i> Stockholm</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>© 2026 Abubakar Warsame. </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abubakar-warsame-8950a6157" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/a-bakar1" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:Abubakarwarsame153@gmail.com" aria-label="E-post"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
