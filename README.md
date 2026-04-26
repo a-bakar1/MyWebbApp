@@ -4,8 +4,7 @@ Välkommen till min personliga portfoliosida!
 
 Jag är en nyexaminerad systemutvecklare med en filosofie kandidatexamen i informatik (inriktning systemutveckling) från Högskolan i Borås, 2025. Den här webbplatsen är byggd från grunden med HTML, CSS och JavaScript för att visa mina färdigheter, projekt och arbetslivserfarenhet.
 
-🌐 **Live-sida:** https://a-bakar1.github.io/MyWebbApp/
-
+🌐 **Live-sida:** https://a-bakar1.github.io/MyWebbApp/  
 📧 **E-post:** Abubakarwarsame153@gmail.com  
 📞 **Telefon:** 076-328 39 18  
 📍 **Plats:** Stockholm
