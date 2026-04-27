@@ -15,17 +15,18 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// === Kontaktformulär validering ===
+// === Kontaktformulär – Formspree ===
 const form = document.getElementById('contactForm');
 const feedback = document.getElementById('formFeedback');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Förhindra sidomladdning (ingen backend än)
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const message = document.getElementById('message').value.trim();
 
+    // Validering
     if (!name || !email || !message) {
         feedback.textContent = 'Alla fält måste fyllas i.';
         feedback.style.color = '#ff4d4d';
@@ -38,10 +39,28 @@ form.addEventListener('submit', (e) => {
         return;
     }
 
-    // Här skulle man kunna skicka datat till en server...
-    feedback.textContent = 'Tack för ditt meddelande! Jag återkommer så snart jag kan.';
-    feedback.style.color = '#00f2fe';
-    form.reset();
+    // Skicka till Formspree
+    try {
+        const response = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            feedback.textContent = 'Tack för ditt meddelande! Jag återkommer så snart jag kan. 🚀';
+            feedback.style.color = '#00f2fe';
+            form.reset();
+        } else {
+            feedback.textContent = 'Något gick fel. Försök igen eller maila mig direkt.';
+            feedback.style.color = '#ff4d4d';
+        }
+    } catch (error) {
+        feedback.textContent = 'Något gick fel. Försök igen eller maila mig direkt.';
+        feedback.style.color = '#ff4d4d';
+    }
 });
 
 function isValidEmail(email) {
